@@ -2,4 +2,11 @@
     background-color:  rgb(236, 193, 138);
     padding: 10px 15px;
     border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.other-details {
+    background-color: rgb(236, 193, 138);
+    border-radius: 8px;
+    padding: 10px 15px;
 }

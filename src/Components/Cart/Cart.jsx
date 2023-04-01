@@ -20,7 +20,7 @@ const Cart = (props) => {
                 </div>
                 <div className="time-child02">
                     <p className='time-style'>0<span>{Time}</span> min read 
-                    <button className='icon'><FaSave /></button>
+                    <button className='icon' onClick={() => props.BookMarked(props.i)}><FaSave /></button>
                     </p> 
                 </div>
             </div>

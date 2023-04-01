@@ -7,6 +7,7 @@ const Blog = () => {
 
     const [info, setInfo] = useState([]);
     const [details, setDetails] = useState([]);
+    const [bookmarked, setBookMarked] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
@@ -19,6 +20,11 @@ const Blog = () => {
         setDetails(addDetails);
     }
 
+    const BookMarked = (i) => {
+        const setCount =[...bookmarked, i];
+        setBookMarked(setCount);
+    }
+
     return (
         <div className='blog-container'>
             <div className="main-blog">
@@ -27,12 +33,14 @@ const Blog = () => {
                         key={i.id}
                         i = {i}
                         addToDetails = {addToDetails}
+                        BookMarked = {BookMarked}
                     ></Cart>)
                 }
             </div>
             <div className="blog-detail">
                     <Details
                         details = {details}
+                        bookmarked = {bookmarked}
                     ></Details>
             </div>
         </div>

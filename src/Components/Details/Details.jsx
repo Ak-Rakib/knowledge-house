@@ -16,13 +16,18 @@ const Details = (props) => {
         count = count + parseInt(blog.id);
     }
 
+    let title;
+    for(const text of bookmarked){
+        title = text.title;
+    }
+
     return (
         <div>
-            <h3 className="count-read-time">Spent time on read: {total} min</h3>
+            <h4 className="count-read-time">Spent time on read: {total} min</h4>
             <div className="other-details">
                 <h4>Bookmarked Blogs: {count}</h4> 
                 <p className='selected-blog'>
-
+                    {title}
                 </p>
             </div>
         </div>

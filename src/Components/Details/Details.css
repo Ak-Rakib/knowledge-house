@@ -1,5 +1,5 @@
 .count-read-time {
-    background-color:  rgb(236, 193, 138);
+    background-color: rgb(235, 146, 29);
     padding: 10px 15px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -9,4 +9,10 @@
     background-color: rgb(236, 193, 138);
     border-radius: 8px;
     padding: 10px 15px;
+}
+
+.selected-blog {
+    background-color: rgb(235, 146, 29);
+    padding: 10px 15px;
+    border-radius: 8px;
 }

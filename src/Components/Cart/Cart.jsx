@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css';
+import { FaBeer, FaSave } from "react-icons/fa";
 
 const Cart = (props) => {
     const {name, profile, image, Date, title, Time, hashtag} = props.i;
@@ -19,7 +20,9 @@ const Cart = (props) => {
                     </div>
                 </div>
                 <div className="time-child02">
-                    <p className='time-style'>0<span>{Time}</span> min read</p> 
+                    <p className='time-style'>0<span>{Time}</span> min read 
+                    <span className='icon'><FaSave /></span>
+                    </p> 
                 </div>
             </div>
             <h2 className='cart-title'>{title}</h2>

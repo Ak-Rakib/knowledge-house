@@ -9,6 +9,7 @@
 .sub-header {
     font-size: 50%;
     color: white;
+    border-bottom: 3px solid black;
 }
 
 .nav-profile {

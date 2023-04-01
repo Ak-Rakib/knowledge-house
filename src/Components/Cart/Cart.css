@@ -1,6 +1,6 @@
 .cart-container {
-    border: 1px solid gray;
-    margin: 10px 0;
+    border-bottom: 1px solid gray;
+    margin: 20px 0;
 }
 
 .cover-img-p {
@@ -51,6 +51,11 @@
 .time-style {
     font-weight: 600;
     color: #969696;
+}
+
+.icon {
+    color: black;
+    margin-left: 5px;
 }
 
 .cart-title {

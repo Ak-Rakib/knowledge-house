@@ -14,10 +14,13 @@
     border-radius: 8px;
 }
 
+.details-container {
+    padding: 10px 20px;
+}
+
 .profile-parents {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .profile-child01 {
@@ -48,4 +51,13 @@
 .time-style {
     font-weight: 600;
     color: #969696;
+}
+
+.cart-title {
+    color: black;
+}
+
+.hashtag {
+    font-weight: 600;
+    color: #969696; 
 }

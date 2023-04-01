@@ -2,13 +2,14 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
-    const {name, profile, image, Date, title, Time} = props.i;
+    const {name, profile, image, Date, title, Time, hashtag} = props.i;
     console.log(image);
     return (
         <div className='cart-container'>
             <div className="cover-img-p">
                <img className='cover-img' src={image} alt="" />
             </div>
+            <div className="details-container">
             <div className="profile-parents">
                 <div className="profile-child01">
                         <img className='inside-profile' src={profile} alt="" />
@@ -20,6 +21,10 @@ const Cart = (props) => {
                 <div className="time-child02">
                     <p className='time-style'>0<span>{Time}</span> min read</p> 
                 </div>
+            </div>
+            <h2 className='cart-title'>{title}</h2>
+            <p className='hashtag'>{hashtag}</p>
+            <a href="">Mark and read</a>
             </div>
         </div>
     );

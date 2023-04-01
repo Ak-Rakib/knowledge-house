@@ -1,10 +1,9 @@
 import React from 'react';
 import './Cart.css';
-import { FaBeer, FaSave } from "react-icons/fa";
+import { FaSave } from "react-icons/fa";
 
 const Cart = (props) => {
     const {name, profile, image, Date, title, Time, hashtag} = props.i;
-    console.log(image);
     return (
         <div className='cart-container'>
             <div className="cover-img-p">
@@ -21,13 +20,13 @@ const Cart = (props) => {
                 </div>
                 <div className="time-child02">
                     <p className='time-style'>0<span>{Time}</span> min read 
-                    <span className='icon'><FaSave /></span>
+                    <button className='icon'><FaSave /></button>
                     </p> 
                 </div>
             </div>
             <h2 className='cart-title'>{title}</h2>
             <p className='hashtag'>{hashtag}</p>
-            <a href="">Mark and read</a>
+            <button className='mark-btn' onClick={() => props.addToDetails(props.i)}>Mark and read</button>
             </div>
         </div>
     );

@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import { FaSave } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
     const {name, profile, image, Date, title, Time, hashtag} = props.i;
+
+    const [clicked, setClicked] = useState(false);
+
+    const handleClick = () => {
+        if(clicked){
+            toast.error("Already Selected");
+        } 
+        else {
+            setClicked(true);
+            props.BookMarked(props.i);
+        }
+    }
+
+    
     return (
         <div className='cart-container'>
             <div className="cover-img-p">
@@ -20,7 +36,8 @@ const Cart = (props) => {
                 </div>
                 <div className="time-child02">
                     <p className='time-style'>0<span>{Time}</span> min read 
-                    <button className='icon' onClick={() => props.BookMarked(props.i)}><FaSave /></button>
+                    <button className='icon' onClick={handleClick}><FaSave /></button>
+                    <ToastContainer position="top-right" />
                     </p> 
                 </div>
             </div>

@@ -2,8 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgb(235, 146, 29);
     padding: 0 40px;
+}
+
+.sub-header {
+    font-size: 50%;
+    color: white;
 }
 
 .nav-profile {

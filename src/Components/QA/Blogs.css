@@ -1,0 +1,8 @@
+.blogs-container {
+    border: 1px solid rgb(235, 233, 233);
+    margin: 20px 30px;
+}
+
+.blogs-child {
+    padding: 10px 15px;
+}
